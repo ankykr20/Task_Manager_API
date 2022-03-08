@@ -1,0 +1,702 @@
+{
+	"info": {
+		"_postman_id": "9d4a1803-056e-4d2c-9976-5f8fe7d915b9",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "POST Insert",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/posts/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "692"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2b4-Um8GBN2RbpvMNEqwth2AnU9iRnM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 17:02:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"622105039e5c3b66c44c822c\",\n        \"title\": \"First Post\",\n        \"description\": \"This is first description\",\n        \"date\": \"2022-03-03T18:12:19.264Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62210b3558cc6b6d1dd2a327\",\n        \"title\": \"Second Post\",\n        \"description\": \"This is second description\",\n        \"date\": \"2022-03-03T18:38:45.425Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62210deba7e0d4b74bc9f9d2\",\n        \"title\": \"3rd Post\",\n        \"description\": \"This is my third description\",\n        \"date\": \"2022-03-03T18:50:19.476Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62217a49ddae6bc3b4706938\",\n        \"title\": \"fourth Post\",\n        \"description\": \"This is third post\",\n        \"date\": \"2022-03-04T02:32:41.584Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6224e8fe18f15a89ab7aee47\",\n        \"title\": \"fourth Post\",\n        \"description\": \"This is third post\",\n        \"date\": \"2022-03-06T17:01:50.614Z\",\n        \"__v\": 0\n    }\n]"
+				},
+				{
+					"name": "POST Insert 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"Fifth Post\",\r\n    \"description\" : \"This is my first post.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/posts/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "136"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"88-l2ixoE66ZoK5Qt12+kpLr/JgIWk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 17:07:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"title\": \"Fifth Post\",\n    \"description\": \"This is my first post.\",\n    \"_id\": \"6224ea5318f15a89ab7aee4a\",\n    \"date\": \"2022-03-06T17:07:31.402Z\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "GET Find",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"Fifth Post\",\r\n    \"description\" : \"This is my first post.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/posts/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "829"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"33d-9OcRgsMHb2FZotxuWnJUMKmbqek\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 17:08:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"622105039e5c3b66c44c822c\",\n        \"title\": \"First Post\",\n        \"description\": \"This is first description\",\n        \"date\": \"2022-03-03T18:12:19.264Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62210b3558cc6b6d1dd2a327\",\n        \"title\": \"Second Post\",\n        \"description\": \"This is second description\",\n        \"date\": \"2022-03-03T18:38:45.425Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62210deba7e0d4b74bc9f9d2\",\n        \"title\": \"3rd Post\",\n        \"description\": \"This is my third description\",\n        \"date\": \"2022-03-03T18:50:19.476Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62217a49ddae6bc3b4706938\",\n        \"title\": \"fourth Post\",\n        \"description\": \"This is third post\",\n        \"date\": \"2022-03-04T02:32:41.584Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6224e8fe18f15a89ab7aee47\",\n        \"title\": \"fourth Post\",\n        \"description\": \"This is third post\",\n        \"date\": \"2022-03-06T17:01:50.614Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6224ea5318f15a89ab7aee4a\",\n        \"title\": \"Fifth Post\",\n        \"description\": \"This is my first post.\",\n        \"date\": \"2022-03-06T17:07:31.402Z\",\n        \"__v\": 0\n    }\n]"
+				},
+				{
+					"name": "GET Find by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"Fifth Post\",\r\n    \"description\" : \"This is my first post.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/posts/622105039e5c3b66c44c822c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"622105039e5c3b66c44c822c"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "139"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8b-nPkLzfA2zcxoVh1gvORh7ZAFpzA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 17:09:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"622105039e5c3b66c44c822c\",\n    \"title\": \"First Post\",\n    \"description\": \"This is first description\",\n    \"date\": \"2022-03-03T18:12:19.264Z\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "DELETE by ID",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"Fifth Post\",\r\n    \"description\" : \"This is my first post.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/posts/6224ea5318f15a89ab7aee4a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"6224ea5318f15a89ab7aee4a"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"26-fgR5yLHQ1Hpp6zDESHaY9wJreYE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 17:10:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"acknowledged\": true,\n    \"deletedCount\": 1\n}"
+				},
+				{
+					"name": "PATCH by ID",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"Last Post\",\r\n    \"description\" : \"This is my first post.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/posts/6224e8fe18f15a89ab7aee47",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"6224e8fe18f15a89ab7aee47"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "92"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 17:14:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"acknowledged\": true,\n    \"modifiedCount\": 1,\n    \"upsertedId\": null,\n    \"upsertedCount\": 0,\n    \"matchedCount\": 1\n}"
+				},
+				{
+					"name": "Insert users Post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Anky\",\r\n    \"email\":\"anky123@gmail.com\",\r\n    \"password\":\"Ankit@123\",\r\n    \"age\":25\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "167"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a7-L41e6rmDpIglZR47T3qjjRWt4wI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Mar 2022 16:35:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Anky\",\n    \"email\": \"anky123@gmail.com\",\n    \"password\": \"$2a$08$3oEr5vxuF9qoFgbnebSJz.r0SVNNiZQJlIvIPt6VZZMTXueBIJLNS\",\n    \"age\": 25,\n    \"_id\": \"62263455bb173722f4f87cce\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "Get Find  (User)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Manish\",\r\n    \"email\":\"mani234@gmail.com\",\r\n    \"password\":\"mani@123\",\r\n    \"age\":27\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "622"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"26e-eapGFiz35iCMOvtq0honpwiy59Y\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Mar 2022 16:42:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6226339759e5f2a71b211fa0\",\n        \"name\": \"Ankit Kumar\",\n        \"email\": \"anky@gmail.com\",\n        \"password\": \"12345678\",\n        \"age\": 22\n    },\n    {\n        \"_id\": \"62263455bb173722f4f87cce\",\n        \"name\": \"Anky\",\n        \"email\": \"anky123@gmail.com\",\n        \"password\": \"$2a$08$3oEr5vxuF9qoFgbnebSJz.r0SVNNiZQJlIvIPt6VZZMTXueBIJLNS\",\n        \"age\": 25,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"622635cebb173722f4f87cd0\",\n        \"name\": \"Devanshu\",\n        \"email\": \"dev123@gmail.com\",\n        \"password\": \"$2a$08$60BmPbMe2KLiOFa5FA0eVOzqHwNrfMDJpjZoXRcG2JpytXnON49oK\",\n        \"age\": 26,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"622635f0bb173722f4f87cd2\",\n        \"name\": \"Manish\",\n        \"email\": \"mani234@gmail.com\",\n        \"password\": \"$2a$08$drLmypeNyR8ADgfiItNOxu94g/u2SvtJaKUT/L.Tj81OZ3NBc7IiG\",\n        \"age\": 27,\n        \"__v\": 0\n    }\n]"
+				},
+				{
+					"name": "Get Find ID (users)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Manish\",\r\n    \"email\":\"mani234@gmail.com\",\r\n    \"password\":\"mani@123\",\r\n    \"age\":27\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/6226339759e5f2a71b211fa0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"6226339759e5f2a71b211fa0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "111"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6f-fyPE0v7eDkd83Iz2HEb3x6Riz9U\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Mar 2022 16:45:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6226339759e5f2a71b211fa0\",\n    \"name\": \"Ankit Kumar\",\n    \"email\": \"anky@gmail.com\",\n    \"password\": \"12345678\",\n    \"age\": 22\n}"
+				},
+				{
+					"name": "delete (users)",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Manish\",\r\n    \"email\":\"mani234@gmail.com\",\r\n    \"password\":\"mani@123\",\r\n    \"age\":27\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/622635f0bb173722f4f87cd2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"622635f0bb173722f4f87cd2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"26-fgR5yLHQ1Hpp6zDESHaY9wJreYE\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Mar 2022 16:46:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"acknowledged\": true,\n    \"deletedCount\": 1\n}"
+				},
+				{
+					"name": "Patch ID (users)",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Devanshu\",\r\n    \"email\":\"mani234@gmail.com\",\r\n    \"password\":\"mani@123\",\r\n    \"age\":27\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/622635cebb173722f4f87cd0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"622635cebb173722f4f87cd0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "92"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5c-XE4LqSKK8lMBgnDPfq7vp2yCSG8\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Mar 2022 16:50:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"acknowledged\": true,\n    \"modifiedCount\": 1,\n    \"upsertedId\": null,\n    \"upsertedCount\": 0,\n    \"matchedCount\": 1\n}"
+				}
+			]
+		}
+	]
+}
